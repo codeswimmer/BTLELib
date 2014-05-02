@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E6959BE1913EE27007E9117 /* libLuokat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6959BD1913EE27007E9117 /* libLuokat.a */; };
 		9EA08F6B19134836007DB760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA08F6A19134836007DB760 /* Foundation.framework */; };
 		9EA08F7019134836007DB760 /* BTLELib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EA08F6F19134836007DB760 /* BTLELib.h */; };
 		9EA08F7219134836007DB760 /* BTLELib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA08F7119134836007DB760 /* BTLELib.m */; };
@@ -16,7 +17,6 @@
 		9EA08F7F19134836007DB760 /* libBTLELib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA08F6719134836007DB760 /* libBTLELib.a */; };
 		9EA08F8519134836007DB760 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EA08F8319134836007DB760 /* InfoPlist.strings */; };
 		9EA08F8719134836007DB760 /* BTLELibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA08F8619134836007DB760 /* BTLELibTests.m */; };
-		9EA08F9A1913488D007DB760 /* libLuokat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA08F991913488D007DB760 /* libLuokat.a */; };
 		9EA08FA7191348D2007DB760 /* BTLECentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA08F9E191348D2007DB760 /* BTLECentral.m */; };
 		9EA08FA8191348D2007DB760 /* BTLEDataReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA08FA0191348D2007DB760 /* BTLEDataReceiver.m */; };
 		9EA08FA9191348D2007DB760 /* BTLEDataSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA08FA2191348D2007DB760 /* BTLEDataSender.m */; };
@@ -58,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9E6959BD1913EE27007E9117 /* libLuokat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLuokat.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/CardFlyWorkspace-fzjydpphlzicjdgszdzzgvsjlywe/Build/Products/Debug-iphoneos/libLuokat.a"; sourceTree = "<group>"; };
 		9EA08F6719134836007DB760 /* libBTLELib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBTLELib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA08F6A19134836007DB760 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9EA08F6E19134836007DB760 /* BTLELib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTLELib-Prefix.pch"; sourceTree = "<group>"; };
@@ -87,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EA08F9A1913488D007DB760 /* libLuokat.a in Frameworks */,
+				9E6959BE1913EE27007E9117 /* libLuokat.a in Frameworks */,
 				9EA08F6B19134836007DB760 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +129,7 @@
 		9EA08F6919134836007DB760 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E6959BD1913EE27007E9117 /* libLuokat.a */,
 				9EA08F991913488D007DB760 /* libLuokat.a */,
 				9EA08F6A19134836007DB760 /* Foundation.framework */,
 				9EA08F7819134836007DB760 /* XCTest.framework */,
@@ -395,6 +397,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BTLELib-csafydjrojzatpfnoewzkwnbvbos/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CardFlyWorkspace-fzjydpphlzicjdgszdzzgvsjlywe/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +414,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BTLELib-csafydjrojzatpfnoewzkwnbvbos/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CardFlyWorkspace-fzjydpphlzicjdgszdzzgvsjlywe/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,6 +477,7 @@
 				9EA08F8C19134836007DB760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EA08F8D19134836007DB760 /* Build configuration list for PBXNativeTarget "BTLELibTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +486,7 @@
 				9EA08F8F19134836007DB760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
