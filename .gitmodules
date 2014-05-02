@@ -1,0 +1,3 @@
+[submodule "Luokat"]
+	path = Luokat
+	url = git@github.com:KeithErmel/Luokat.git

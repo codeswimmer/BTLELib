@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Luokat/Luokat/Luokat.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BTLELib/BTLELib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/BTLELibExample/BTLELibExample.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EA0903B19134ABA007DB760 /* libBTLELib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA0903919134ABA007DB760 /* libBTLELib.a */; };
+		9EB140F818E4665500E3F5F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB140F718E4665500E3F5F5 /* Foundation.framework */; };
+		9EB140FA18E4665500E3F5F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB140F918E4665500E3F5F5 /* CoreGraphics.framework */; };
+		9EB140FC18E4665500E3F5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB140FB18E4665500E3F5F5 /* UIKit.framework */; };
+		9EB1410218E4665500E3F5F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EB1410018E4665500E3F5F5 /* InfoPlist.strings */; };
+		9EB1410418E4665500E3F5F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1410318E4665500E3F5F5 /* main.m */; };
+		9EB1410B18E4665500E3F5F5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB1410918E4665500E3F5F5 /* Main_iPhone.storyboard */; };
+		9EB1410E18E4665500E3F5F5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB1410C18E4665500E3F5F5 /* Main_iPad.storyboard */; };
+		9EB1411318E4665500E3F5F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB1411218E4665500E3F5F5 /* Images.xcassets */; };
+		9EB1411A18E4665500E3F5F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB1411918E4665500E3F5F5 /* XCTest.framework */; };
+		9EB1411B18E4665500E3F5F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB140F718E4665500E3F5F5 /* Foundation.framework */; };
+		9EB1411C18E4665500E3F5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB140FB18E4665500E3F5F5 /* UIKit.framework */; };
+		9EB1412418E4665500E3F5F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EB1412218E4665500E3F5F5 /* InfoPlist.strings */; };
+		9EB1412618E4665500E3F5F5 /* BTLELibExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1412518E4665500E3F5F5 /* BTLELibExampleTests.m */; };
+		9EB1419018E46B5600E3F5F5 /* BTLELibExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1418518E46B5600E3F5F5 /* BTLELibExampleAppDelegate.m */; };
+		9EB1419118E46B5600E3F5F5 /* BTLELibExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1418718E46B5600E3F5F5 /* BTLELibExampleViewController.m */; };
+		9EB1419218E46B5600E3F5F5 /* ReceiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1418C18E46B5600E3F5F5 /* ReceiverViewController.m */; };
+		9EB1419318E46B5600E3F5F5 /* SenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1418F18E46B5600E3F5F5 /* SenderViewController.m */; };
+		9EB141A718E48D5F00E3F5F5 /* AppUUIDs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB141A618E48D5F00E3F5F5 /* AppUUIDs.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EB1411D18E4665500E3F5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB140EC18E4665500E3F5F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB140F318E4665500E3F5F5;
+			remoteInfo = BTLELibExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EA0903919134ABA007DB760 /* libBTLELib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBTLELib.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/BTLELib-csafydjrojzatpfnoewzkwnbvbos/Build/Products/Debug-iphoneos/libBTLELib.a"; sourceTree = "<group>"; };
+		9EA0903A19134ABA007DB760 /* libLuokat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLuokat.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/BTLELib-csafydjrojzatpfnoewzkwnbvbos/Build/Products/Debug-iphoneos/libLuokat.a"; sourceTree = "<group>"; };
+		9EB140F418E4665500E3F5F5 /* BTLELibExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTLELibExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB140F718E4665500E3F5F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9EB140F918E4665500E3F5F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9EB140FB18E4665500E3F5F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9EB140FF18E4665500E3F5F5 /* BTLELibExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTLELibExample-Info.plist"; sourceTree = "<group>"; };
+		9EB1410118E4665500E3F5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9EB1410318E4665500E3F5F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EB1410518E4665500E3F5F5 /* BTLELibExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTLELibExample-Prefix.pch"; sourceTree = "<group>"; };
+		9EB1410A18E4665500E3F5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		9EB1410D18E4665500E3F5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		9EB1411218E4665500E3F5F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9EB1411818E4665500E3F5F5 /* BTLELibExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTLELibExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB1411918E4665500E3F5F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9EB1412118E4665500E3F5F5 /* BTLELibExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTLELibExampleTests-Info.plist"; sourceTree = "<group>"; };
+		9EB1412318E4665500E3F5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9EB1412518E4665500E3F5F5 /* BTLELibExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTLELibExampleTests.m; sourceTree = "<group>"; };
+		9EB1412F18E4667E00E3F5F5 /* libBTLELib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBTLELib.a; path = "../../../../../Library/Developer/Xcode/DerivedData/BTLELib-csafydjrojzatpfnoewzkwnbvbos/Build/Products/Debug-iphoneos/libBTLELib.a"; sourceTree = "<group>"; };
+		9EB1418418E46B5600E3F5F5 /* BTLELibExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLELibExampleAppDelegate.h; sourceTree = "<group>"; };
+		9EB1418518E46B5600E3F5F5 /* BTLELibExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLELibExampleAppDelegate.m; sourceTree = "<group>"; };
+		9EB1418618E46B5600E3F5F5 /* BTLELibExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLELibExampleViewController.h; sourceTree = "<group>"; };
+		9EB1418718E46B5600E3F5F5 /* BTLELibExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLELibExampleViewController.m; sourceTree = "<group>"; };
+		9EB1418918E46B5600E3F5F5 /* GCDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTools.h; sourceTree = "<group>"; };
+		9EB1418B18E46B5600E3F5F5 /* ReceiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiverViewController.h; sourceTree = "<group>"; };
+		9EB1418C18E46B5600E3F5F5 /* ReceiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiverViewController.m; sourceTree = "<group>"; };
+		9EB1418E18E46B5600E3F5F5 /* SenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SenderViewController.h; sourceTree = "<group>"; };
+		9EB1418F18E46B5600E3F5F5 /* SenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SenderViewController.m; sourceTree = "<group>"; };
+		9EB141A518E48D5F00E3F5F5 /* AppUUIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUUIDs.h; sourceTree = "<group>"; };
+		9EB141A618E48D5F00E3F5F5 /* AppUUIDs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUUIDs.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB140F118E4665500E3F5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA0903B19134ABA007DB760 /* libBTLELib.a in Frameworks */,
+				9EB140FA18E4665500E3F5F5 /* CoreGraphics.framework in Frameworks */,
+				9EB140FC18E4665500E3F5F5 /* UIKit.framework in Frameworks */,
+				9EB140F818E4665500E3F5F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB1411518E4665500E3F5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB1411A18E4665500E3F5F5 /* XCTest.framework in Frameworks */,
+				9EB1411C18E4665500E3F5F5 /* UIKit.framework in Frameworks */,
+				9EB1411B18E4665500E3F5F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EB140EB18E4665500E3F5F5 = {
+			isa = PBXGroup;
+			children = (
+				9EB140FD18E4665500E3F5F5 /* BTLELibExample */,
+				9EB1411F18E4665500E3F5F5 /* BTLELibExampleTests */,
+				9EB140F618E4665500E3F5F5 /* Frameworks */,
+				9EB140F518E4665500E3F5F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EB140F518E4665500E3F5F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB140F418E4665500E3F5F5 /* BTLELibExample.app */,
+				9EB1411818E4665500E3F5F5 /* BTLELibExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB140F618E4665500E3F5F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0903919134ABA007DB760 /* libBTLELib.a */,
+				9EA0903A19134ABA007DB760 /* libLuokat.a */,
+				9EB1412F18E4667E00E3F5F5 /* libBTLELib.a */,
+				9EB140F718E4665500E3F5F5 /* Foundation.framework */,
+				9EB140F918E4665500E3F5F5 /* CoreGraphics.framework */,
+				9EB140FB18E4665500E3F5F5 /* UIKit.framework */,
+				9EB1411918E4665500E3F5F5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EB140FD18E4665500E3F5F5 /* BTLELibExample */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1418218E46B5600E3F5F5 /* Source */,
+				9EB1416D18E46AA000E3F5F5 /* UX */,
+				9EB140FE18E4665500E3F5F5 /* Supporting Files */,
+			);
+			path = BTLELibExample;
+			sourceTree = "<group>";
+		};
+		9EB140FE18E4665500E3F5F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB140FF18E4665500E3F5F5 /* BTLELibExample-Info.plist */,
+				9EB1410018E4665500E3F5F5 /* InfoPlist.strings */,
+				9EB1410318E4665500E3F5F5 /* main.m */,
+				9EB1410518E4665500E3F5F5 /* BTLELibExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EB1411F18E4665500E3F5F5 /* BTLELibExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1412518E4665500E3F5F5 /* BTLELibExampleTests.m */,
+				9EB1412018E4665500E3F5F5 /* Supporting Files */,
+			);
+			path = BTLELibExampleTests;
+			sourceTree = "<group>";
+		};
+		9EB1412018E4665500E3F5F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1412118E4665500E3F5F5 /* BTLELibExampleTests-Info.plist */,
+				9EB1412218E4665500E3F5F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EB1416D18E46AA000E3F5F5 /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1410C18E4665500E3F5F5 /* Main_iPad.storyboard */,
+				9EB1410918E4665500E3F5F5 /* Main_iPhone.storyboard */,
+				9EB1411218E4665500E3F5F5 /* Images.xcassets */,
+			);
+			name = UX;
+			sourceTree = "<group>";
+		};
+		9EB1418218E46B5600E3F5F5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1418318E46B5600E3F5F5 /* App */,
+				9EB1418818E46B5600E3F5F5 /* Common */,
+				9EB1418A18E46B5600E3F5F5 /* Receive */,
+				9EB1418D18E46B5600E3F5F5 /* Send */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9EB1418318E46B5600E3F5F5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9EB141A518E48D5F00E3F5F5 /* AppUUIDs.h */,
+				9EB141A618E48D5F00E3F5F5 /* AppUUIDs.m */,
+				9EB1418418E46B5600E3F5F5 /* BTLELibExampleAppDelegate.h */,
+				9EB1418518E46B5600E3F5F5 /* BTLELibExampleAppDelegate.m */,
+				9EB1418618E46B5600E3F5F5 /* BTLELibExampleViewController.h */,
+				9EB1418718E46B5600E3F5F5 /* BTLELibExampleViewController.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9EB1418818E46B5600E3F5F5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1418918E46B5600E3F5F5 /* GCDTools.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9EB1418A18E46B5600E3F5F5 /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1418B18E46B5600E3F5F5 /* ReceiverViewController.h */,
+				9EB1418C18E46B5600E3F5F5 /* ReceiverViewController.m */,
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		9EB1418D18E46B5600E3F5F5 /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1418E18E46B5600E3F5F5 /* SenderViewController.h */,
+				9EB1418F18E46B5600E3F5F5 /* SenderViewController.m */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB140F318E4665500E3F5F5 /* BTLELibExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB1412918E4665500E3F5F5 /* Build configuration list for PBXNativeTarget "BTLELibExample" */;
+			buildPhases = (
+				9EB140F018E4665500E3F5F5 /* Sources */,
+				9EB140F118E4665500E3F5F5 /* Frameworks */,
+				9EB140F218E4665500E3F5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTLELibExample;
+			productName = BTLELibExample;
+			productReference = 9EB140F418E4665500E3F5F5 /* BTLELibExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EB1411718E4665500E3F5F5 /* BTLELibExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB1412C18E4665500E3F5F5 /* Build configuration list for PBXNativeTarget "BTLELibExampleTests" */;
+			buildPhases = (
+				9EB1411418E4665500E3F5F5 /* Sources */,
+				9EB1411518E4665500E3F5F5 /* Frameworks */,
+				9EB1411618E4665500E3F5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EB1411E18E4665500E3F5F5 /* PBXTargetDependency */,
+			);
+			name = BTLELibExampleTests;
+			productName = BTLELibExampleTests;
+			productReference = 9EB1411818E4665500E3F5F5 /* BTLELibExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EB140EC18E4665500E3F5F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BTLELibExample;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Keith Ermel";
+				TargetAttributes = {
+					9EB1411718E4665500E3F5F5 = {
+						TestTargetID = 9EB140F318E4665500E3F5F5;
+					};
+				};
+			};
+			buildConfigurationList = 9EB140EF18E4665500E3F5F5 /* Build configuration list for PBXProject "BTLELibExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EB140EB18E4665500E3F5F5;
+			productRefGroup = 9EB140F518E4665500E3F5F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB140F318E4665500E3F5F5 /* BTLELibExample */,
+				9EB1411718E4665500E3F5F5 /* BTLELibExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EB140F218E4665500E3F5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB1410E18E4665500E3F5F5 /* Main_iPad.storyboard in Resources */,
+				9EB1411318E4665500E3F5F5 /* Images.xcassets in Resources */,
+				9EB1410B18E4665500E3F5F5 /* Main_iPhone.storyboard in Resources */,
+				9EB1410218E4665500E3F5F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB1411618E4665500E3F5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB1412418E4665500E3F5F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EB140F018E4665500E3F5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB1419018E46B5600E3F5F5 /* BTLELibExampleAppDelegate.m in Sources */,
+				9EB1419318E46B5600E3F5F5 /* SenderViewController.m in Sources */,
+				9EB1419118E46B5600E3F5F5 /* BTLELibExampleViewController.m in Sources */,
+				9EB1419218E46B5600E3F5F5 /* ReceiverViewController.m in Sources */,
+				9EB141A718E48D5F00E3F5F5 /* AppUUIDs.m in Sources */,
+				9EB1410418E4665500E3F5F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB1411418E4665500E3F5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB1412618E4665500E3F5F5 /* BTLELibExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EB1411E18E4665500E3F5F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EB140F318E4665500E3F5F5 /* BTLELibExample */;
+			targetProxy = 9EB1411D18E4665500E3F5F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EB1410018E4665500E3F5F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB1410118E4665500E3F5F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9EB1410918E4665500E3F5F5 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB1410A18E4665500E3F5F5 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9EB1410C18E4665500E3F5F5 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB1410D18E4665500E3F5F5 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		9EB1412218E4665500E3F5F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB1412318E4665500E3F5F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EB1412718E4665500E3F5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EB1412818E4665500E3F5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EB1412A18E4665500E3F5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTLELibExample/BTLELibExample-Prefix.pch";
+				INFOPLIST_FILE = "BTLELibExample/BTLELibExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BTLELib-csafydjrojzatpfnoewzkwnbvbos/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9EB1412B18E4665500E3F5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTLELibExample/BTLELibExample-Prefix.pch";
+				INFOPLIST_FILE = "BTLELibExample/BTLELibExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BTLELib-csafydjrojzatpfnoewzkwnbvbos/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9EB1412D18E4665500E3F5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTLELibExample.app/BTLELibExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTLELibExample/BTLELibExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BTLELibExampleTests/BTLELibExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9EB1412E18E4665500E3F5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTLELibExample.app/BTLELibExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTLELibExample/BTLELibExample-Prefix.pch";
+				INFOPLIST_FILE = "BTLELibExampleTests/BTLELibExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EB140EF18E4665500E3F5F5 /* Build configuration list for PBXProject "BTLELibExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB1412718E4665500E3F5F5 /* Debug */,
+				9EB1412818E4665500E3F5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB1412918E4665500E3F5F5 /* Build configuration list for PBXNativeTarget "BTLELibExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB1412A18E4665500E3F5F5 /* Debug */,
+				9EB1412B18E4665500E3F5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB1412C18E4665500E3F5F5 /* Build configuration list for PBXNativeTarget "BTLELibExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB1412D18E4665500E3F5F5 /* Debug */,
+				9EB1412E18E4665500E3F5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EB140EC18E4665500E3F5F5 /* Project object */;
+}
