@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** BTLELib is unused at this time */
 @interface BTLELib : NSObject
 
 @end

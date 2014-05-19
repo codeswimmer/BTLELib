@@ -24,11 +24,21 @@ iOS library for connecting with and sending data to another device via Bluetooth
         * etc.
 
 ##### Using
-* Clone repo
+* Clone repo (or download archive file)
 * Drag & drop <code>BTLELib.xcodeproj</code> into your workspace
 * Follow [Apple's documentation](https://developer.apple.com/library/ios/technotes/iOSStaticLibraries/Articles/configuration.html) on how to use static libraries in iOS
 
 The library uses ARC. It has been developed using Xcode 5 & tested against iOS 7.x.
+
+##### Documentation
+[Latest HTML documentation](http://keithermel.github.io/BTLELib/docs/index.html)
+
+The Xcode project includes a `Documentation` target which can be used to generate documentation for the API. 
+
+It requires the use of [appledoc](http://gentlebytes.com/appledoc/). 
+
+Once you've built the documentation it will be available through Xcode's Documentation window.
+
 
 ##### Examples
 * The <code>[BTLELibExample](https://github.com/KeithErmel/BTLELib/tree/master/Examples/BTLELibExample)</code> sends a bit over 10K of data to a receiver

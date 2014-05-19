@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9E7ABF5119299B7D0043534D /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9E7ABF5419299B7D0043534D /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				9E7ABF5519299B820043534D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9E6959BE1913EE27007E9117 /* libLuokat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6959BD1913EE27007E9117 /* libLuokat.a */; };
 		9EA08F6B19134836007DB760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA08F6A19134836007DB760 /* Foundation.framework */; };
@@ -261,6 +275,7 @@
 			targets = (
 				9EA08F6619134836007DB760 /* BTLELib */,
 				9EA08F7619134836007DB760 /* BTLELibTests */,
+				9E7ABF5119299B7D0043534D /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +290,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E7ABF5519299B820043534D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"Keith Ermel\" \\\n--company-id \"name.keithermel\" \\\n--output \"~/Projects/Help/${PROJECT_NAME}\" \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n--docset-platform-family iphoneos \\\n--ignore \"*.m\" \\\n--index-desc \"${PROJECT_DIR}/README.md\" \\\n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EA08F6319134836007DB760 /* Sources */ = {
@@ -320,6 +351,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9E7ABF5219299B7D0043534D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E7ABF5319299B7D0043534D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9EA08F8819134836007DB760 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,6 +506,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E7ABF5419299B7D0043534D /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E7ABF5219299B7D0043534D /* Debug */,
+				9E7ABF5319299B7D0043534D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9EA08F6219134836007DB760 /* Build configuration list for PBXProject "BTLELib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
