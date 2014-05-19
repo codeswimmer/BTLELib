@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Btlelib by KeithErmel</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Btlelib</h1>
+          <h2>iOS library for connecting with, and sending data to, another device via Bluetooth LE.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/KeithErmel/BTLELib/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/KeithErmel/BTLELib/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/KeithErmel/BTLELib" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="btlelib" class="anchor" href="#btlelib"><span class="octicon octicon-link"></span></a>BTLELib</h1>
+
+<p>iOS library for connecting with and sending data to another device via Bluetooth LE.</p>
+
+<h5>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features:</h5>
+
+<ul>
+<li>Simplified, abstracted API to CoreBluetooth
+
+<ul>
+<li>
+<a href="https://github.com/KeithErmel/BTLELib/blob/master/BTLELib/BTLELib/Source/Bluetooth/BTLEPeripheral.h"><code>BTLEPeripheral</code></a> - data provider</li>
+<li>
+<a href="https://github.com/KeithErmel/BTLELib/blob/master/BTLELib/BTLELib/Source/Bluetooth/BTLECentral.h"><code>BTLECentral</code></a> - consumer of data provided by peripheral</li>
+<li>Send &amp; Receive Data
+
+<ul>
+<li><a href="https://github.com/KeithErmel/BTLELib/blob/master/BTLELib/BTLELib/Source/Bluetooth/BTLEDataSender.h"><code>BTLEDataSender</code></a></li>
+<li><a href="https://github.com/KeithErmel/BTLELib/blob/master/BTLELib/BTLELib/Source/Bluetooth/BTLEDataReceiver.h"><code>BTLEReceiver</code></a></li>
+<li>Can send either a packet (&lt;= 20 bytes) or package of data
+
+<ul>
+<li>Packaged data is parceled into 20 byte chunks</li>
+<li>Queued up &amp; sent in order to receiver via GCD</li>
+<li>Provides progress updates to delegates (both sender &amp; receiver)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ideal for adding BTLE support to your apps</li>
+<li>Easily turn any device that provides BTLE into a peripheral or central</li>
+<li>Note that this is not yet a full-featured BTLE library:
+
+<ul>
+<li>The initial release focuses on seamless pairing &amp; data transfer between devices</li>
+<li>Future additions will provide generalized support for:
+
+<ul>
+<li>Services</li>
+<li>Read / write characteristics</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h5>
+<a name="using" class="anchor" href="#using"><span class="octicon octicon-link"></span></a>Using</h5>
+
+<ul>
+<li>Clone repo</li>
+<li>Drag &amp; drop <code>BTLELib.xcodeproj</code> into your workspace</li>
+<li>Follow <a href="https://developer.apple.com/library/ios/technotes/iOSStaticLibraries/Articles/configuration.html">Apple's documentation</a> on how to use static libraries in iOS</li>
+</ul><p>The library uses ARC. It has been developed using Xcode 5 &amp; tested against iOS 7.x.</p>
+
+<h5>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h5>
+
+<p><a href="http://keithermel.github.io/BTLELib/docs/index.html">Latest HTML documentation</a></p>
+
+<p>The Xcode project includes a <code>Documentation</code> target which can be used to generate documentation for the API. </p>
+
+<p>It requires the use of <a href="http://gentlebytes.com/appledoc/">appledoc</a>. </p>
+
+<p>Once you've built the documentation it will be available through Xcode's Documentation window.</p>
+
+<h5>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h5>
+
+<ul>
+<li>The <code><a href="https://github.com/KeithErmel/BTLELib/tree/master/Examples/BTLELibExample">BTLELibExample</a></code> sends a bit over 10K of data to a receiver</li>
+<li>Requires two devices running the example app</li>
+<li>One serves as sender, the other as receiver; user selectable</li>
+<li>Provides progress updates to UI via progress bar on both the sending &amp; receiving devices</li>
+</ul>
+        </section>
+
+        <footer>
+          Btlelib is maintained by <a href="https://github.com/KeithErmel">KeithErmel</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
