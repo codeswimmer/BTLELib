@@ -62,7 +62,6 @@
 		9EB1418518E46B5600E3F5F5 /* BTLELibExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLELibExampleAppDelegate.m; sourceTree = "<group>"; };
 		9EB1418618E46B5600E3F5F5 /* BTLELibExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLELibExampleViewController.h; sourceTree = "<group>"; };
 		9EB1418718E46B5600E3F5F5 /* BTLELibExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLELibExampleViewController.m; sourceTree = "<group>"; };
-		9EB1418918E46B5600E3F5F5 /* GCDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTools.h; sourceTree = "<group>"; };
 		9EB1418B18E46B5600E3F5F5 /* ReceiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiverViewController.h; sourceTree = "<group>"; };
 		9EB1418C18E46B5600E3F5F5 /* ReceiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiverViewController.m; sourceTree = "<group>"; };
 		9EB1418E18E46B5600E3F5F5 /* SenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SenderViewController.h; sourceTree = "<group>"; };
@@ -182,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				9EB1418318E46B5600E3F5F5 /* App */,
-				9EB1418818E46B5600E3F5F5 /* Common */,
 				9EB1418A18E46B5600E3F5F5 /* Receive */,
 				9EB1418D18E46B5600E3F5F5 /* Send */,
 			);
@@ -200,14 +198,6 @@
 				9EB1418718E46B5600E3F5F5 /* BTLELibExampleViewController.m */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		9EB1418818E46B5600E3F5F5 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				9EB1418918E46B5600E3F5F5 /* GCDTools.h */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		9EB1418A18E46B5600E3F5F5 /* Receive */ = {

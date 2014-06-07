@@ -9,7 +9,6 @@
 #import "SenderViewController.h"
 #import "AppUUIDs.h"
 #import "BTLELib/BTLEPeripheral.h"
-#import "GCDTools.h"
 
 
 const char* kSendQueueName  = "com.keithermel.btle.send.queue";
@@ -39,7 +38,7 @@ const char* kSendQueueName  = "com.keithermel.btle.send.queue";
 -(void)peripheral:(CBPeripheralManager *)peripheral
      didSubscribe:(CBCharacteristic *)characteristic
 {
-    GCD_ON_MAIN_QUEUE(^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         self.connectionStatus.backgroundColor = connectedColor;
         self.sendButton.enabled = YES;
     });
@@ -48,7 +47,7 @@ const char* kSendQueueName  = "com.keithermel.btle.send.queue";
 -(void)peripheral:(CBPeripheralManager *)peripheral
    didUnsubscribe:(CBCharacteristic *)characteristic
 {
-    GCD_ON_MAIN_QUEUE(^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         self.connectionStatus.backgroundColor = disconnectedColor;
         self.sendButton.enabled = NO;
     });
@@ -56,7 +55,7 @@ const char* kSendQueueName  = "com.keithermel.btle.send.queue";
 
 -(void)didSendDataChunk:(float)progress
 {
-    GCD_ON_MAIN_QUEUE(^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         float value = ((float)progress / 100.0);
         NSLog(@"progress: %3.2f", value);
         self.progressView.progress = value;
@@ -65,11 +64,11 @@ const char* kSendQueueName  = "com.keithermel.btle.send.queue";
 
 -(void)didFinishSendingData
 {
-    GCD_ON_MAIN_QUEUE((^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         [self updateStatusLabel];
         [self.navigationController popViewControllerAnimated:YES];
         self.statusLabel.text = [NSString stringWithFormat:@"%d bytes added", (int)self.totalToBeSent];
-    }));
+    });
 }
 
 
@@ -83,7 +82,7 @@ const char* kSendQueueName  = "com.keithermel.btle.send.queue";
 
 -(void)fillTextWithText
 {
-    dispatch_async(GCD_DEFAULT_GLOBAL_QUEUE(), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *text = @"";
         
         NSString *pad = @"abcdefghijklmn\n";
@@ -97,10 +96,10 @@ const char* kSendQueueName  = "com.keithermel.btle.send.queue";
             }
         }
         
-        GCD_ON_MAIN_QUEUE((^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             self.textView.text = text;
             self.statusLabel.text = [NSString stringWithFormat:@"%d bytes added", (int)self.textView.text.length];
-        }));
+        });
     });
 }
 

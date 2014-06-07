@@ -9,7 +9,7 @@
 #import "ReceiverViewController.h"
 #import "AppUUIDs.h"
 #import "BTLELib/BTLECentral.h"
-#import "GCDTools.h"
+
 
 @interface ReceiverViewController ()<BTLECentralDelegate> {
     UIColor *connectedColor;
@@ -31,26 +31,28 @@
 
 -(void)didConnectToPeripheral:(CBPeripheral *)peripheral
 {
-    GCD_ON_MAIN_QUEUE(^{self.connectionStatus.backgroundColor = connectedColor;});
+    dispatch_async(dispatch_get_main_queue(), ^{self.connectionStatus.backgroundColor = connectedColor;});
 }
 
 -(void)didDisconnectFromPeripheral:(CBPeripheral *)peripheral
 {
-    GCD_ON_MAIN_QUEUE(^{self.connectionStatus.backgroundColor = disconnectedColor;});
+    dispatch_async(dispatch_get_main_queue(), ^{self.connectionStatus.backgroundColor = disconnectedColor;});
+
 }
 
 -(void)receiveDataProgress:(float)progress
 {
-    GCD_ON_MAIN_QUEUE(^{self.progressView.progress = progress;});
+    dispatch_async(dispatch_get_main_queue(), ^{self.progressView.progress = progress;});
+
 }
 
 -(void)didReceiveData:(NSData *)data
 {
-    GCD_ON_MAIN_QUEUE((^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         NSString *text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         self.textView.text = text;
         self.statusLabel.text = [NSString stringWithFormat:@"%d bytes received", (int)text.length];
-    }));
+    });
 }
 
 #pragma mark - View Lifecycle
